@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>How much I love my Gf Zalihe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #fff0f5;
+      font-family: 'Helvetica Neue', sans-serif;
+      color: #b30059;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .counter {
+      font-size: 4rem;
+      font-weight: bold;
+      background: #fac9c9;
+      padding: 1.5rem 3rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(179, 0, 89, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .heart {
+      margin-top: 2rem;
+      font-size: 2rem;
+      animation: beat 1s infinite;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <h1>How much I love my Gf Zalihe</h1>
+  <div class="counter" id="loveCounter">0</div>
+  <div class="heart">❤️</div>
+
+  <script>
+    let count = 0;
+    const counter = document.getElementById('loveCounter');
+
+    setInterval(() => {
+      count++;
+      counter.textContent = count;
+    }, 1000);
+  </script>
+</body>
+</html>
